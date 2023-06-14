@@ -1,11 +1,13 @@
 import {BrowserRouter,Routes,Route} from 'react-router-dom'
 import Home from './view/screen/Home';
-import About from './view/screen/About';
+import Register from './view/screen/Register';
 import Details from './view/screen/Details';
 import Login from './view/screen/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Row,Col,Button,Navbar,Nav,NavDropdown,Form,FormControl} from 'react-bootstrap';
 import { menubar } from './view/data/Data';
+import './view/style/style.css'
+
 function App(){
   console.log(menubar);
   return(
@@ -15,7 +17,8 @@ function App(){
       <Row>
         <Col>
         <Navbar bg="light" expand="lg">
-  <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+  <Navbar.Brand href="#">E-COURSES</Navbar.Brand>
+
   <Navbar.Toggle aria-controls="navbarScroll" />
   <Navbar.Collapse id="navbarScroll">
     <Nav
@@ -26,7 +29,7 @@ function App(){
       <Nav.Link href="/">Home</Nav.Link>
       <Nav.Link href="/Details">Details</Nav.Link>
       <Nav.Link href="/login">Login</Nav.Link>
-      <Nav.Link href="/about">About</Nav.Link>
+      <Nav.Link href="/register">Register</Nav.Link>
       {
         menubar.map(function(d){
           return(
@@ -64,17 +67,17 @@ function App(){
     </Container>
     <Routes>
        <Route path='/' element ={<Home/>}/>
-       <Route path='/About' element ={<About/>}/>
+       <Route path='/Register' element ={<Register/>}/>
        <Route path='/Details' element ={<Details/>}/>
        <Route path='/Login' element ={<Login/>}/>
     </Routes>
+   
     <>
     <Container>
-      <div className='bg-primary'>
-        <p>Welcome to Edu center</p>
-      </div>
+     
     </Container>
     </>
+  
     </BrowserRouter>
     </>
   );

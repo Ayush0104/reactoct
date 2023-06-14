@@ -1,0 +1,22 @@
+.Cur{
+    cursor: pointer;
+}
+
+.register-div{
+    width:400px;
+    height:400px;
+    background-color:rgb(185, 174, 174);
+    margin:auto;
+    margin-top: 5%;
+   
+
+}
+
+.abcd-1{
+    border-radius: 0%;
+    
+}
+
+.abcd-2{
+    text-align: center;
+}
