@@ -1,25 +1,82 @@
-import logo from './logo.svg';
-import './App.css';
-
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import {BrowserRouter,Routes,Route} from 'react-router-dom'
+import Home from './view/screen/Home';
+import About from './view/screen/About';
+import Details from './view/screen/Details';
+import Login from './view/screen/Login';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Container,Row,Col,Button,Navbar,Nav,NavDropdown,Form,FormControl} from 'react-bootstrap';
+import { menubar } from './view/data/Data';
+function App(){
+  console.log(menubar);
+  return(
+    <>
+    <BrowserRouter>
+    <Container>
+      <Row>
+        <Col>
+        <Navbar bg="light" expand="lg">
+  <Navbar.Brand href="#">Navbar scroll</Navbar.Brand>
+  <Navbar.Toggle aria-controls="navbarScroll" />
+  <Navbar.Collapse id="navbarScroll">
+    <Nav
+      className="mr-auto my-2 my-lg-0"
+      style={{ maxHeight: '100px' }}
+      navbarScroll
+    >
+      <Nav.Link href="/">Home</Nav.Link>
+      <Nav.Link href="/Details">Details</Nav.Link>
+      <Nav.Link href="/login">Login</Nav.Link>
+      <Nav.Link href="/about">About</Nav.Link>
+      {
+        menubar.map(function(d){
+          return(
+            <Nav.Link href={'/${d}'}></Nav.Link>
+           
+           
+          )
+          })
+      }
+      
+      
+      {/* <NavDropdown title="Link" id="navbarScrollingDropdown">
+        <NavDropdown.Item href="#action3">Action</NavDropdown.Item>
+        <NavDropdown.Item href="#action4">Another action</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action5">Something else here</NavDropdown.Item>
+      </NavDropdown> */}
+      <Nav.Link href="#" disabled>
+        Link
+      </Nav.Link>
+    </Nav>
+    <Form className="d-flex">
+      <FormControl
+        type="search"
+        placeholder="Search"
+        className="mr-2"
+        aria-label="Search"
+      />
+      <Button variant="outline-success">Search</Button>
+    </Form>
+  </Navbar.Collapse>
+</Navbar>
+        </Col>
+      </Row>
+    </Container>
+    <Routes>
+       <Route path='/' element ={<Home/>}/>
+       <Route path='/About' element ={<About/>}/>
+       <Route path='/Details' element ={<Details/>}/>
+       <Route path='/Login' element ={<Login/>}/>
+    </Routes>
+    <>
+    <Container>
+      <div className='bg-primary'>
+        <p>Welcome to Edu center</p>
+      </div>
+    </Container>
+    </>
+    </BrowserRouter>
+    </>
   );
 }
-
 export default App;
