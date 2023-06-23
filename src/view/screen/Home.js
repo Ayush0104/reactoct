@@ -152,6 +152,11 @@ export default function Home()
           <Image src={team4} thumbnail  style={{borderRadius:"7%"}}/>
           <div style={{textAlign:"center"}}><h4>Jitendra Singh </h4></div> 
         </Col>
+        <Col>
+        <Row>
+          <h1>hii</h1>
+        </Row>
+        </Col>
  </Row>
  
 </>
