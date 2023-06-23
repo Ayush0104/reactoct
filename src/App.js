@@ -3,6 +3,7 @@ import Home from './view/screen/Home';
 import Register from './view/screen/Register';
 import Details from './view/screen/Details';
 import Login from './view/screen/Login';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Row,Col,Button,Navbar,Nav,NavDropdown,Form,FormControl} from 'react-bootstrap';
 import { menubar } from './view/data/Data';
@@ -30,6 +31,7 @@ function App(){
       <Nav.Link href="/Details">Details</Nav.Link>
       <Nav.Link href="/login">Login</Nav.Link>
       <Nav.Link href="/register">Register</Nav.Link>
+     
       {
         menubar.map(function(d){
           return(
@@ -71,15 +73,11 @@ function App(){
        <Route path='/Details' element ={<Details/>}/>
        <Route path='/Login' element ={<Login/>}/>
     </Routes>
-   
-    <>
-    <Container>
-     
-    </Container>
-    </>
   
     </BrowserRouter>
     </>
   );
 }
 export default App;
+
+

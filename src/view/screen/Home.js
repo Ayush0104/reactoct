@@ -1,6 +1,7 @@
 
 import {Row,Col, Carousel,Container,Button,Card,ListGroup} from "react-bootstrap";
-import { banner,middle,four,Validity,Teacher,para,discount,registration} from "../data/Data";
+import { banner,middle,four,Validity,Teacher,para,discount,registration, team1, team2 ,team3, team4 } from "../data/Data";
+import {Image} from 'react-bootstrap';
 import {useNavigate} from 'react-router-dom'
 export default function Home()
 
@@ -120,6 +121,40 @@ export default function Home()
     </Col>
      </Row>
   </>
-     </Container>
+  <hr/>
+  <>
+  
+    <div style={{textAlign:'center', color:'orangered',margin:'3%'}}>
+       <h4>TEACHERS</h4>
+       </div>
+    
+   
+      <div  style={{textAlign:'center', color:'grey', margin:'2%'}}> 
+        <h1>MEET OUR TEACHERS</h1>
+      </div>
+
+<Row>
+        <Col xs={3} md={3}>
+          <Image src={team1} thumbnail style={{borderRadius:"7%"}} />
+         <div style={{textAlign:"center"}}><h4> Shinu Varghese </h4>
+         
+         </div> 
+        </Col>
+        <Col xs={3} md={3}>
+          <Image src={team2}thumbnail  style={{borderRadius:"7%"}}/>
+          <div style={{textAlign:"center"}}><h4> Vishnu Sharma </h4></div> 
+        </Col>
+        <Col xs={3} md={3}>
+          <Image src={team3} thumbnail  style={{borderRadius:"7%"}}/>
+          <div style={{textAlign:"center"}}><h4> Jessica Peter </h4></div> 
+        </Col>
+        <Col xs={3} md={3}>
+          <Image src={team4} thumbnail  style={{borderRadius:"7%"}}/>
+          <div style={{textAlign:"center"}}><h4>Jitendra Singh </h4></div> 
+        </Col>
+ </Row>
+ 
+</>
+ </Container>
 );
 }  

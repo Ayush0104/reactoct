@@ -5,18 +5,122 @@
 .register-div{
     width:400px;
     height:400px;
-    background-color:rgb(185, 174, 174);
+    background-color:rgb(241, 108, 5);
     margin:auto;
     margin-top: 5%;
-   
+   border-radius: 5%;
 
 }
 
 .abcd-1{
     border-radius: 0%;
-    
+    border-color: black;
 }
 
 .abcd-2{
+    position: absolute;
+    right:47%;
+    top:70%;
+}
+
+.abcd-3{
     text-align: center;
+}
+
+.login-div{
+  width:400px;
+  height:300px;
+ background-color: rgb(175, 199, 199);
+ margin:auto;
+  margin-top:5% ;
+  border-radius: 5%;
+}
+.button-3{
+    right:48%;
+    position: absolute;
+}
+
+.detail-img{
+  width:90%;
+  height:300px;
+  background-color: rgb(0, 238, 255) ;
+  margin:5%;
+}
+.detail-img img{
+  width:100%;
+  height:100%;
+  
+}
+
+
+
+.detail-img1{
+    width:100%;
+    height:100px; 
+    background-color: rgb(27, 23, 23) ;
+    margin-bottom: 10px;
+  }
+
+  
+.detail-img1-1{
+    width:20%;
+    height:80%;
+    background-color: rgb(219, 31, 154) ;
+    margin-bottom: 10px;
+    display: inline-flex;
+    margin:10px;
+  }
+
+
+.detail-text{
+    width:90%;
+    height:300px;
+    background-color: rgb(0, 238, 255) ;
+    margin:5%;
+  }
+  .detail-text1{
+    width:100%;
+    background-color: rgb(224, 239, 16) ;
+    margin:5%;
+    padding-top: 10px;
+    padding-bottom:10px;
+  }
+  .detail-text2{
+    width:100%;
+   background-color: rgb(224, 239, 16) ;
+    margin:5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+  .detail-text3{
+    width:100%;
+     background-color: rgb(224, 239, 16) ;
+    margin:5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+ 
+  
+.detail-cart{
+    width:90%;
+   height:30px;
+    
+    margin:5%;
+}
+
+.detail-cart1{
+  width:90%;
+ 
+  color:black;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.detail-cart2{
+  width:90%;
+ color:black;
+ 
+  margin:5%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }

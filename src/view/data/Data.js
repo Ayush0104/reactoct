@@ -58,3 +58,8 @@ para:'Career coaching includes mock interviews, CV, LinkedIn, Github and soft sk
 
   export var registration=[require('../img/registration.jpg')]
  
+ export var team1=[require('../img/team-1.jpg'),]
+export var team2=[require('../img/team-2.jpg'),]
+export var team3= [require('../img/team-3.jpg'),]
+export var team4=[require('../img/team-4.jpg')]
+
