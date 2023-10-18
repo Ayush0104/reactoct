@@ -3,11 +3,16 @@ import Home from './view/screen/Home';
 import Register from './view/screen/Register';
 import Details from './view/screen/Details';
 import Login from './view/screen/Login';
+import Payment from './view/screen/Payment';
+import About from './view/screen/About';
+
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Container,Row,Col,Button,Navbar,Nav,NavDropdown,Form,FormControl} from 'react-bootstrap';
 import { menubar } from './view/data/Data';
 import './view/style/style.css'
+import Addtocart from './view/screen/Addtocart';
+
 
 function App(){
   console.log(menubar);
@@ -31,6 +36,7 @@ function App(){
       <Nav.Link href="/Details">Details</Nav.Link>
       <Nav.Link href="/login">Login</Nav.Link>
       <Nav.Link href="/register">Register</Nav.Link>
+      
      
       {
         menubar.map(function(d){
@@ -72,6 +78,9 @@ function App(){
        <Route path='/Register' element ={<Register/>}/>
        <Route path='/Details' element ={<Details/>}/>
        <Route path='/Login' element ={<Login/>}/>
+       <Route path='/AddtoCart' element ={<Addtocart/>}/>
+       <Route path='/Payment' element ={<Payment/>}/>
+       <Route path='/About' element ={<About/>}/>
     </Routes>
   
     </BrowserRouter>

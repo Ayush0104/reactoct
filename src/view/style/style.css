@@ -1,5 +1,7 @@
 .Cur{
     cursor: pointer;
+    transform:scale(+1.05);
+    margin-top: 7%;
 }
 
 .register-div{
@@ -11,6 +13,19 @@
    border-radius: 5%;
 
 }
+
+.team-1:hover{
+ transform: scale(+1.05);
+}
+.team-2:hover{
+  transform: scale(+1.05);
+ }
+ .team-3:hover{
+  transform: scale(+1.05);
+ }
+ .team-4:hover{
+  transform: scale(+1.05);
+ }
 
 .abcd-1{
     border-radius: 0%;
@@ -43,7 +58,7 @@
 .detail-img{
   width:90%;
   height:300px;
-  background-color: rgb(0, 238, 255) ;
+
   margin:5%;
 }
 .detail-img img{
@@ -57,10 +72,15 @@
 .detail-img1{
     width:100%;
     height:100px; 
-    background-color: rgb(27, 23, 23) ;
+  
     margin-bottom: 10px;
   }
 
+  .detail-img1 img{
+    width:100%;
+    height:100%;
+  
+  }
   
 .detail-img1-1{
     width:20%;
@@ -69,13 +89,14 @@
     margin-bottom: 10px;
     display: inline-flex;
     margin:10px;
+    
   }
 
 
 .detail-text{
     width:90%;
     height:300px;
-    background-color: rgb(0, 238, 255) ;
+   
     margin:5%;
   }
   .detail-text1{
@@ -102,25 +123,215 @@
  
   
 .detail-cart{
-    width:90%;
-   height:30px;
-    
+    width:100%;
+    height:30px;
     margin:5%;
+    display: inline-flex;
+    margin-top: 50%;
 }
 
 .detail-cart1{
-  width:90%;
- 
-  color:black;
+  width:100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
 .detail-cart2{
-  width:90%;
- color:black;
- 
-  margin:5%;
+  width:100%;
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.addtocart-img{
+width:170px;
+position: relative;
+right:115%;
+cursor: pointer;
+}
+
+.addtocart-item{
+ display: inline-flex;
+}
+
+.addtocart-text-name{
+margin:0px;
+padding:0px;
+font-size:18px;
+font-weight:bold;
+margin-left: 1%;
+/* position: relative;
+right:84%; */
+}
+
+.addtocart-text-price{
+margin-left: 100%;
+/* position: relative;
+right:100%; */
+}
+
+.addtocart-n-p-i{
+  display: inline-flex;
+  margin-left:62%;
+
+ 
+}
+
+.total-amount{
+  width:100%;
+  display:inline-flex;
+}
+
+.total-amount div{
+  width:50%;
+  margin-left: 10px;
+}
+.team-1{
+  cursor:pointer;
+}
+
+.team-2{
+  cursor:pointer;
+}
+
+.team-3{
+  cursor:pointer;
+}
+
+.team-4{
+  cursor:pointer;
+}
+
+.payment1{
+ 
+  background-color: bisque;
+}
+
+.payment2{
+  display: inline-flex;
+  margin-top: 2%;
+}
+
+.payment3{
+  display:inline-flex;
+  margin-top: 3%;
+}
+
+.cod{
+  display: inline-flex;
+  margin-top: 2%;
+}
+
+.coupon{
+  display:inline-flex;
+  margin-top: 2%;
+}
+
+
+.footer1{
+  background-color: rgb(121, 97, 181);
+  width:100%;
+  height:460px;
+  margin-top: 90px;
+  border-radius: 2%;
+  margin-bottom: 90px;
+  
+}
+
+.footer2{
+  display: inline-flex;
+  color: rgb(82, 47, 22);
+  margin-top: 5%;
+  width:80%;
+  
+  
+}
+
+.footer2-1{
+  
+  margin-left: 2%;
+  
+  
+}
+
+.footer2-2{
+  /* margin-right:16%; */
+  margin-left:20%;
+  
+}
+
+.footer2-3{
+  
+  margin-left: 20%;
+}
+
+.add{
+  margin-top: 15%;
+  color: white;
+}
+
+.mob{
+  color: white;
+  margin-top:5%;
+}
+
+.mail{
+  color: white;
+  margin-top: 5%;
+}
+
+.icon-1{
+   width:12%;
+   
+}
+
+.icon-2{
+  width:12%;
+  
+}
+
+.icon-3{
+  width:12%;
+  
+
+}
+
+.icon-4{
+  width:12%;
+  
+}
+
+.footer2-1-1{
+  display:inline-flex;
+  margin-top: 20%;
+}
+
+.about1{
+background-color: rgb(96, 198, 189);
+
+
+}
+
+.institute-name{
+background-color: rgb(11, 21, 18);
+position:absolute;
+bottom:405%;
+}
+
+.footer2-2-1{
+  color: white;
+  margin-top: 20%;
+}
+
+.contact{
+  color:white;
+  margin-top: 20%;
+}
+
+.rights{
+  background-color: rgb(12, 12, 12);
+  margin-top: 10%;
+  height:13%;
+  color: white;
+  text-align: center;
+}
+

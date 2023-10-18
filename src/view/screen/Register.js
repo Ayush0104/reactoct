@@ -33,7 +33,7 @@ return(
         <Form.Label>Password</Form.Label>
         <Form.Control className="abcd-1" type="password" placeholder="Password" value={password} onChange={d=>setPassword(d.target.value)}/>
       </Form.Group>
-      <Button variant="primary" type="button" onClick={registerUser } className="abcd-2">submit</Button>{' '} 
+      <Button variant="primary" type="button" onClick={registerUser} className="abcd-2">submit</Button>{' '} 
     </Form>
 
     </div>
